@@ -173,7 +173,7 @@ public class Navigation
      * Pop the BackStack until a specified transaction (entry) tag.
      * @param transactionTag Tag supplied at the time of transaction (default is fragment simple name)
      * @param inclusive True to include transaction referenced by the tag in the pop, false to pop everything after
-     * @return true on a successful pop
+     * @return true on a successful pop.
      */
     public static boolean popUntil(String transactionTag, boolean inclusive)
     {
