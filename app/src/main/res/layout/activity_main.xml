@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hart.ftdev.MainActivity"
+    android:background="#00bbff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/baseHold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:tag="NAA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nav To A"
+            android:onClick="onNav"/>
+
+        <Button
+            android:tag="NAB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nav To B"
+            android:onClick="onNav"/>
+
+        <Button
+            android:tag="NAC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nav To C"
+            android:onClick="onNav"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:tag="NWA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nav w/Bundle A"
+            android:onClick="onNav"/>
+
+        <Button
+            android:tag="NWB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nav w/Bundle B"
+            android:onClick="onNav"/>
+
+        <Button
+            android:tag="NWC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nav w/Bundle C"
+            android:onClick="onNav"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:tag="PTA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pop to A"
+            android:onClick="onNav"/>
+
+        <Button
+            android:tag="PTB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pop to B"
+            android:onClick="onNav"/>
+
+        <Button
+            android:tag="PTC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pop to C"
+            android:onClick="onNav"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:tag="PIA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pop/Inc A"
+            android:onClick="onNav"/>
+
+        <Button
+            android:tag="PIB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pop/Inc B"
+            android:onClick="onNav"/>
+
+        <Button
+            android:tag="PIC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pop/Inc C"
+            android:onClick="onNav"/>
+
+    </LinearLayout>
+
+    <Button
+        android:tag="CLEAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Entire Stack"
+        android:onClick="onNav"/>
+
+</LinearLayout>
