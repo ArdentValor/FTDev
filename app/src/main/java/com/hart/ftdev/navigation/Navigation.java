@@ -1,6 +1,8 @@
 package com.hart.ftdev.navigation;
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -15,6 +17,8 @@ public class Navigation
 {
     private static FragmentManager manager;
     private static int viewID;
+    private static Context context;
+
 
     /**
      * Required before use!
@@ -25,6 +29,7 @@ public class Navigation
     {
         manager = activity.getSupportFragmentManager();
         viewID = resourceID;
+        context = activity;
     }
 
 
@@ -132,6 +137,10 @@ public class Navigation
         transaction.addToBackStack(transactionID);
 
         transaction.commit();
+
+        Intent i = new Intent();
+        i.setAction(NavUtilityConstants.CLOSE_NAV_DRAWER);
+        context.sendBroadcast(i);
     }
 
     private static Fragment getInstance(Class fragment)
@@ -150,6 +159,11 @@ public class Navigation
             e.printStackTrace();
             return null;
         }
+    }
+
+    public static int getBackStackCount()
+    {
+        return manager.getBackStackEntryCount();
     }
 
     /**
